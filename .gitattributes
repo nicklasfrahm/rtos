@@ -1,0 +1,5 @@
+# auto detect text files and enforce linux line endings
+* eol=lf
+
+# configure git lfs for binary files
+*.exe filter=lfs diff=lfs merge=lfs -text
