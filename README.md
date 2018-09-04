@@ -4,9 +4,7 @@ This repository consists of the source code for the exercises during the RTOS co
 
 ## Introduction
 
-To compile the code, make sure to have the latest `mingw-w64` compiler installed. On Windows this can be accomplished by using the Linux subsystem for Windows (WSL). Compile it by running:
-
-On Windows with WSL for a 64bit system:
+To compile the code, make sure to have the latest `mingw-w64` compiler installed. On Windows this can be accomplished by using the Linux subsystem for Windows (WSL). Compile it on Windows with WSL for a 64bit system by running:
 
 ```bash
 x86_64-w64-mingw32-g++ ./src/windows_threads/hello_threads.cpp -o hello_threads.exe
