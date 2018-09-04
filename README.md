@@ -9,7 +9,7 @@ To compile the code, make sure to have the latest `mingw-w64` compiler installed
 On Windows with WSL for a 64bit system:
 
 ```bash
-x86_64-w64-mingw32-g++ ./src/classes/counter.cpp -o counter.exe
+x86_64-w64-mingw32-g++ ./src/windows_threads/hello_threads.cpp -o hello_threads.exe
 ```
 
 ## Tools
@@ -17,7 +17,7 @@ x86_64-w64-mingw32-g++ ./src/classes/counter.cpp -o counter.exe
 This repo comes with small helper scripts for the WSL. To compile the code, run it and remove the executable, run:
 
 ```bash
-./run.sh counter
+./run.sh hello_threads
 ```
 
 To remove all `.exe`-files, run:
