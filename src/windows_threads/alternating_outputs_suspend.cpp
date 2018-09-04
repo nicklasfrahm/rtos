@@ -5,7 +5,7 @@ HANDLE opponents[2];
 
 void challengeOpponent(char letters[], char self, char opponent) {
   while (1)
-	{
+  {
     SuspendThread(opponents[opponent]);
 
     for (char i = 0; letters[i]; ++i)
@@ -33,11 +33,11 @@ void grevious(void)
 
 int main(void)
 {
-	opponents[0] = CreateThread(NULL, 0, (LPTHREAD_START_ROUTINE)kenobi, NULL, 0, NULL);
-	opponents[1] = CreateThread(NULL, 0, (LPTHREAD_START_ROUTINE)grevious, NULL, 0, NULL);
-	
-	// use INFINITE instead of 6000 to make program run forever
-	WaitForMultipleObjects(2, opponents, true, 6000);
+  opponents[0] = CreateThread(NULL, 0, (LPTHREAD_START_ROUTINE)kenobi, NULL, 0, NULL);
+  opponents[1] = CreateThread(NULL, 0, (LPTHREAD_START_ROUTINE)grevious, NULL, 0, NULL);
+  
+  // use INFINITE instead of 6000 to make program run forever
+  WaitForMultipleObjects(2, opponents, true, 6000);
 
-	return 0;
+  return 0;
 }
